@@ -15,6 +15,8 @@
 		89EF681C1E696A300070E4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EF681A1E696A300070E4AB /* LaunchScreen.storyboard */; };
 		89EF68261E696A570070E4AB /* UILabel+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF68251E696A570070E4AB /* UILabel+Fit.m */; };
 		89EF68291E696C4B0070E4AB /* UIButton+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF68281E696C4B0070E4AB /* UIButton+Fit.m */; };
+		89FFE2471E6D3C6D006F9C55 /* UITextField+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */; };
+		89FFE24A1E6D3DF1006F9C55 /* UITextView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,11 @@
 		89EF68251E696A570070E4AB /* UILabel+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Fit.m"; sourceTree = "<group>"; };
 		89EF68271E696C4B0070E4AB /* UIButton+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Fit.h"; sourceTree = "<group>"; };
 		89EF68281E696C4B0070E4AB /* UIButton+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Fit.m"; sourceTree = "<group>"; };
+		89FFE2451E6D3C6D006F9C55 /* UITextField+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Fit.h"; sourceTree = "<group>"; };
+		89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Fit.m"; sourceTree = "<group>"; };
+		89FFE2481E6D3DF1006F9C55 /* UITextView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fit.h"; sourceTree = "<group>"; };
+		89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fit.m"; sourceTree = "<group>"; };
+		89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiDianFontFitHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,11 @@
 				89EF68251E696A570070E4AB /* UILabel+Fit.m */,
 				89EF68271E696C4B0070E4AB /* UIButton+Fit.h */,
 				89EF68281E696C4B0070E4AB /* UIButton+Fit.m */,
+				89FFE2451E6D3C6D006F9C55 /* UITextField+Fit.h */,
+				89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */,
+				89FFE2481E6D3DF1006F9C55 /* UITextView+Fit.h */,
+				89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */,
+				89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */,
 			);
 			path = ShiDianFontFit;
 			sourceTree = "<group>";
@@ -170,9 +182,11 @@
 			files = (
 				89EF68291E696C4B0070E4AB /* UIButton+Fit.m in Sources */,
 				89EF68261E696A570070E4AB /* UILabel+Fit.m in Sources */,
+				89FFE24A1E6D3DF1006F9C55 /* UITextView+Fit.m in Sources */,
 				89EF68141E696A300070E4AB /* ViewController.m in Sources */,
 				89EF68111E696A300070E4AB /* AppDelegate.m in Sources */,
 				89EF680E1E696A300070E4AB /* main.m in Sources */,
+				89FFE2471E6D3C6D006F9C55 /* UITextField+Fit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +341,7 @@
 				89EF68221E696A300070E4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
