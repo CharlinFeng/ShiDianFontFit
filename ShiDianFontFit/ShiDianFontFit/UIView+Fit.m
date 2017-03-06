@@ -55,14 +55,13 @@
             if (obj.originalConstant <= 0) {
             
                 obj.originalConstant = obj.constant;
-            }
-            
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
                 
-                obj.constant = obj.originalConstant * p;
-            });
-            
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    obj.constant = obj.originalConstant * p;
+                });
+                
+            }
         }
     }];
 }
