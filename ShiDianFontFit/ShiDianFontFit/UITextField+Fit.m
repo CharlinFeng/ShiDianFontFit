@@ -27,38 +27,38 @@
         if(self.tag != 999){
             CGFloat fontSize = self.font.pointSize;
             self.font = [UIFont systemFontOfSize:fontSize*p];
-            [self fit];
+//            [self fit];
         }
     }
     return self;
 }
 
 
--(void)awakeFromNib {
-    
-    [super awakeFromNib];
-    
-    [self fit];
-}
-
--(void)fit {
-    
-    [self.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (obj.identifier.length > 0) {
-            
-            obj.constant = obj.constant *p;
-        }
-    }];
-    
-    [self.superview.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (obj.identifier.length > 0) {
-            
-            obj.constant = obj.constant *p;
-        }
-    }];
-}
+//-(void)awakeFromNib {
+//    
+//    [super awakeFromNib];
+//    
+//    [self fit];
+//}
+//
+//-(void)fit {
+//    
+//    [self.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//        if (obj.identifier.length > 0) {
+//            
+//            obj.constant = obj.constant *p;
+//        }
+//    }];
+//    
+//    [self.superview.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//        if (obj.identifier.length > 0) {
+//            
+//            obj.constant = obj.constant *p;
+//        }
+//    }];
+//}
 
 
 @end

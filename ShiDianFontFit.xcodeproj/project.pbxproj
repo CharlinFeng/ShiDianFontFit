@@ -17,6 +17,7 @@
 		89EF68291E696C4B0070E4AB /* UIButton+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF68281E696C4B0070E4AB /* UIButton+Fit.m */; };
 		89FFE2471E6D3C6D006F9C55 /* UITextField+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */; };
 		89FFE24A1E6D3DF1006F9C55 /* UITextView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */; };
+		89FFE25F1E6D41B0006F9C55 /* UIView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		89FFE2481E6D3DF1006F9C55 /* UITextView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fit.h"; sourceTree = "<group>"; };
 		89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fit.m"; sourceTree = "<group>"; };
 		89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiDianFontFitHeader.h; sourceTree = "<group>"; };
+		89FFE25D1E6D41B0006F9C55 /* UIView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fit.h"; sourceTree = "<group>"; };
+		89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */,
 				89FFE2481E6D3DF1006F9C55 /* UITextView+Fit.h */,
 				89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */,
+				89FFE25D1E6D41B0006F9C55 /* UIView+Fit.h */,
+				89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */,
 				89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */,
 			);
 			path = ShiDianFontFit;
@@ -182,6 +187,7 @@
 			files = (
 				89EF68291E696C4B0070E4AB /* UIButton+Fit.m in Sources */,
 				89EF68261E696A570070E4AB /* UILabel+Fit.m in Sources */,
+				89FFE25F1E6D41B0006F9C55 /* UIView+Fit.m in Sources */,
 				89FFE24A1E6D3DF1006F9C55 /* UITextView+Fit.m in Sources */,
 				89EF68141E696A300070E4AB /* ViewController.m in Sources */,
 				89EF68111E696A300070E4AB /* AppDelegate.m in Sources */,

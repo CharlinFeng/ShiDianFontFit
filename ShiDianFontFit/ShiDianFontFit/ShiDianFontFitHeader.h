@@ -13,7 +13,7 @@
 #import "UIButton+Fit.h"
 #import "UITextField+Fit.h"
 #import "UITextView+Fit.h"
-
+#import "UIView+Fit.h"
 
 
 #endif 
