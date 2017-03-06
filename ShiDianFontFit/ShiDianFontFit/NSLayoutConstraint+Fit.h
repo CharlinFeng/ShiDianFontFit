@@ -1,5 +1,5 @@
 //
-//  UIView+Fit.h
+//  NSLayoutConstraint+Fit.h
 //  ShiDianFontFit
 //
 //  Created by 冯成林 on 2017/3/6.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DynamicProperty.h"
 
-@interface UIView (Fit)
+@interface NSLayoutConstraint (Fit)
 
+@property (nonatomic,assign) CGFloat originalConstant;
 
 @end

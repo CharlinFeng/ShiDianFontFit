@@ -18,6 +18,7 @@
 		89FFE2471E6D3C6D006F9C55 /* UITextField+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2461E6D3C6D006F9C55 /* UITextField+Fit.m */; };
 		89FFE24A1E6D3DF1006F9C55 /* UITextView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */; };
 		89FFE25F1E6D41B0006F9C55 /* UIView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */; };
+		89FFE2851E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFE2841E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiDianFontFitHeader.h; sourceTree = "<group>"; };
 		89FFE25D1E6D41B0006F9C55 /* UIView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fit.h"; sourceTree = "<group>"; };
 		89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fit.m"; sourceTree = "<group>"; };
+		89FFE2821E6D4EDF006F9C55 /* DynamicProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicProperty.h; sourceTree = "<group>"; };
+		89FFE2831E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Fit.h"; sourceTree = "<group>"; };
+		89FFE2841E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Fit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		89EF68231E696A570070E4AB /* ShiDianFontFit */ = {
 			isa = PBXGroup;
 			children = (
+				89FFE2821E6D4EDF006F9C55 /* DynamicProperty.h */,
 				89EF68241E696A570070E4AB /* UILabel+Fit.h */,
 				89EF68251E696A570070E4AB /* UILabel+Fit.m */,
 				89EF68271E696C4B0070E4AB /* UIButton+Fit.h */,
@@ -109,6 +114,8 @@
 				89FFE2491E6D3DF1006F9C55 /* UITextView+Fit.m */,
 				89FFE25D1E6D41B0006F9C55 /* UIView+Fit.h */,
 				89FFE25E1E6D41B0006F9C55 /* UIView+Fit.m */,
+				89FFE2831E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.h */,
+				89FFE2841E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.m */,
 				89FFE24B1E6D3E93006F9C55 /* ShiDianFontFitHeader.h */,
 			);
 			path = ShiDianFontFit;
@@ -193,6 +200,7 @@
 				89EF68111E696A300070E4AB /* AppDelegate.m in Sources */,
 				89EF680E1E696A300070E4AB /* main.m in Sources */,
 				89FFE2471E6D3C6D006F9C55 /* UITextField+Fit.m in Sources */,
+				89FFE2851E6D4F0C006F9C55 /* NSLayoutConstraint+Fit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

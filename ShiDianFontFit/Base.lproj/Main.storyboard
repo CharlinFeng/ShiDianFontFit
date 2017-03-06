@@ -58,7 +58,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="2tH-Sf-FYZ" firstAttribute="centerY" secondItem="qjT-xd-ckc" secondAttribute="centerY" id="2xD-1j-1Nk"/>
-                                    <constraint firstAttribute="bottom" secondItem="2tH-Sf-FYZ" secondAttribute="bottom" constant="20" identifier="31" id="HcC-lG-h7G"/>
+                                    <constraint firstAttribute="bottom" secondItem="2tH-Sf-FYZ" secondAttribute="bottom" constant="20" id="HcC-lG-h7G"/>
                                     <constraint firstItem="2tH-Sf-FYZ" firstAttribute="centerX" secondItem="qjT-xd-ckc" secondAttribute="centerX" id="wSI-ab-fXm"/>
                                 </constraints>
                             </view>
@@ -96,8 +96,8 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="F0z-Ga-Yts" firstAttribute="leading" secondItem="D3V-wK-hTW" secondAttribute="leading" constant="10" id="8zr-aZ-Fnm"/>
-                                    <constraint firstAttribute="bottom" secondItem="F0z-Ga-Yts" secondAttribute="bottom" constant="10" id="KAC-68-mZH"/>
-                                    <constraint firstItem="F0z-Ga-Yts" firstAttribute="top" secondItem="D3V-wK-hTW" secondAttribute="top" constant="10" id="LDG-V4-iAi"/>
+                                    <constraint firstItem="F0z-Ga-Yts" firstAttribute="top" secondItem="D3V-wK-hTW" secondAttribute="top" constant="10" identifier="str" id="LDG-V4-iAi"/>
+                                    <constraint firstItem="F0z-Ga-Yts" firstAttribute="centerY" secondItem="D3V-wK-hTW" secondAttribute="centerY" id="OHQ-Mt-cWL"/>
                                     <constraint firstAttribute="trailing" secondItem="F0z-Ga-Yts" secondAttribute="trailing" constant="10" id="a3a-60-UpB"/>
                                 </constraints>
                             </view>
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372" y="118"/>
+            <point key="canvasLocation" x="-1286" y="50"/>
         </scene>
     </scenes>
 </document>

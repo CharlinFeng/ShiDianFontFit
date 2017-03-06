@@ -7,28 +7,62 @@
 //
 
 #import "UIView+Fit.h"
+#import "NSLayoutConstraint+Fit.h"
+
 #define p [UIScreen mainScreen].bounds.size.width / 320.0
 
+
+
 @implementation UIView (Fit)
+
 
 -(void)awakeFromNib{
     
     [super awakeFromNib];
     
-    [self viewConstraintsFit:self];
-    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        [self viewConstraintsFit:obj];
-    }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self viewSubviewsFit];
+    });
 }
 
--(void)viewConstraintsFit:(__weak UIView *)v{
+-(void)viewSubviewsFit{
     
-    [v.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self viewConstraintsFit];
+    
+    if ([self isKindOfClass:[UILabel class]]) {return;}
+    if ([self isKindOfClass:[UIButton class]]) {return;}
+    if ([self isKindOfClass:[UITextField class]]) {return;}
+    if ([self isKindOfClass:[UITextView class]]) {return;}
+    
+    if (self.subviews.count > 0) {
+    
+        [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            [view viewConstraintsFit];
+        
+            [view viewSubviewsFit];
+            
+        }];
+    }
+}
+
+-(void)viewConstraintsFit{
+    
+    [self.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if (obj.identifier.length > 0) {
             
-            obj.constant = obj.constant *p;
+            if (obj.originalConstant <= 0) {
+            
+                obj.originalConstant = obj.constant;
+            }
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                obj.constant = obj.originalConstant * p;
+            });
+            
         }
     }];
 }
